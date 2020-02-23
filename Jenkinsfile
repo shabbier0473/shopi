@@ -14,7 +14,8 @@ pipeline{
             steps{
                 timestamps{
                  echo '========master======='
-                 sh 'mvn install' 
+                 sh 'mvn install'
+                 sh 'mvn versions:set -Dnewversion=2.0.1
                 }
                
             }
